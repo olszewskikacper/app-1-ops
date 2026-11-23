@@ -9,6 +9,11 @@ pipeline {
             steps {
                 echo "${params.GREETING}, we are building the ${params.BRANCH} branch."
             }
+        stage('Deploy') {
+            steps {
+                echo "deploy stage"
+            }
+        }
         }
     }
 }
